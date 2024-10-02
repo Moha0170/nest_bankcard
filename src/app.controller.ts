@@ -12,4 +12,10 @@ export class AppController {
       message: this.appService.getHello()
     };
   }
+
+  @Get("fizetes")
+  @Render("fizetes")
+  fizetes() {
+    return {asd: "fizetes"};
+  }
 }
